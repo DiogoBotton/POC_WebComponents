@@ -1,16 +1,21 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import reactToWebComponent from "react-to-webcomponent";
-import MyButton from "./MyButton";
+// Define global para ambientes de navegador
+if (typeof window !== 'undefined' && typeof global === 'undefined') {
+  window.global = window;
+}
 
-// Definir process.env se não estiver definido
+// Define process.env se não existir
 if (typeof process === 'undefined') {
-  global.process = {
+  window.process = {
     env: {
       NODE_ENV: 'production'
     }
   };
 }
+
+import React from "react";
+import ReactDOM from "react-dom";
+import reactToWebComponent from "react-to-webcomponent";
+import MyButton from "./MyButton";
 
 // Converter o componente React em Web Component
 const MyButtonElement = reactToWebComponent(MyButton, React, ReactDOM);

@@ -739,7 +739,8 @@ function xt({ label: o = "Clique aqui", alertContent: c = "Você clicou!" }) {
     }
   );
 }
-typeof process > "u" && (global.process = {
+typeof window < "u" && typeof global > "u" && (window.global = window);
+typeof process > "u" && (window.process = {
   env: {
     NODE_ENV: "production"
   }
