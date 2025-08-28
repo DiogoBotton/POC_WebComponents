@@ -21,8 +21,13 @@ export default defineConfig({
       formats: ["es"]             // formato ES Module
     },
     rollupOptions: {
-      // não externalize react/react-dom, queremos que venham juntos no bundle
-      external: [],
-    },
+      external: ['react', 'react-dom'],
+      output: {
+        globals: {
+          react: 'React',
+          'react-dom': 'ReactDOM'
+        }
+      }
+    }
   }
 });
