@@ -8,7 +8,7 @@ export default defineConfig({
     lib: {
       entry: path.resolve(__dirname, 'src/index.js'),
       name: 'MyReactWebComponents',
-      fileName: (format) => `my-react-webcomponents.${format}.js`,
+      fileName: (format) => `my-react-webcomponents.${format}.js`, // Será gerado com esse nome, porém deverá recomendado mudar para a tag especifica
       formats: ['es']
     },
     rollupOptions: {
