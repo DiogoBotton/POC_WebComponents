@@ -4,7 +4,7 @@ module.exports = {
   entry: "./index.js",
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "my-web-components.js",
+    filename: "hello-world.js",
     library: "MyWebComponents",
     libraryTarget: "umd", // gera bundle UMD para uso global
     clean: true
