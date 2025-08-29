@@ -1,0 +1,10 @@
+.wrapper {
+  padding: 16px;
+  background: #f4f4f4;
+  border-radius: 8px;
+  font-family: sans-serif;
+}
+
+h1 {
+  color: #0070f3;
+}
