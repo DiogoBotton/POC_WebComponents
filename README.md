@@ -19,7 +19,7 @@ pnpm create vite@latest my-app -- --template react
 
 ### Melhor solução
 
-O problema: renderizar Widgets de forma dinâmica, onde a partir de uma API o front receberá uma lista de URL's que correspomdem aos links de onde estarão armazenados os Web Components (arquivos JS buildados, bundles). A partir desta lista, o front tem o desafio de renderizar esses componentes dinâmicamente (em tempo de execução) sem a necessidade de rebuildar o front após acrescentar um novo Widget.
+O problema: renderizar Widgets de forma dinâmica, onde a partir de uma API o front receberá uma lista de URL's que correspondem aos links de onde estarão armazenados os Web Components (arquivos JS buildados, bundles). A partir desta lista, o front tem o desafio de renderizar esses componentes dinâmicamente (em tempo de execução) sem a necessidade de rebuildar o front após acrescentar um novo Widget.
 
 **Criação de Web Component com React + Vite**
 
