@@ -5,13 +5,13 @@ export const revalidate = 60;
 export default function Home() {
   const widgets = [
     {
-      src: "https://diogobotton.github.io/POC_WebComponents/hello-world.js", tag: "hello-world"
+      src: "https://diogobotton.github.io/POC_WebComponents/hello-world.js", tag: "hello-world" // Github Pages
     },
     {
-      src: "https://diogobotton.github.io/POC_WebComponents/widget.es.js", tag: "portfolio-widget", name: "Diogo Botton", githubUrl: "https://github.com/DiogoBotton"
+      src: "https://diogobotton.github.io/POC_WebComponents/widget.es.js", tag: "portfolio-widget", name: "Diogo Botton", githubUrl: "https://github.com/DiogoBotton" // Github Pages
     },
     {
-      src: "https://diogobotton.github.io/POC_WebComponents/widget.es.js", tag: "portfolio-widget", name: "Gabriel Dias", githubUrl: "https://github.com/gabrieldiasss"
+      src: "https://raw.githubusercontent.com/DiogoBotton/POC_WebComponents/refs/heads/main/docs/widget.es.js", tag: "portfolio-widget", name: "Vanessa Byork", githubUrl: "https://github.com/Byorks" // Raw: Também é possível adquirir o raw do arquivo Js buildado
     }
   ]
 
