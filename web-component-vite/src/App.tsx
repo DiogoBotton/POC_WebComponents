@@ -6,7 +6,7 @@ function App() {
     <div>
       <h1>Home</h1>
 
-      <Portfolio name='Diogo' githubUrl='https://github.com/DiogoBotton'/>
+      <Portfolio name='Diogo' githuburl='https://github.com/DiogoBotton'/>
     </div>
   )
 }

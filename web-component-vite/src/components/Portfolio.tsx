@@ -1,14 +1,15 @@
 import { type FC } from "react"
 import styles from "./portfolio.scss?inline"
 
+// Nomes das props precisam ser minúsculas
 export interface IPortfolioProps {
     name: string;
-    githubUrl: string;
+    githuburl: string;
 }
 
 export const Portfolio: FC<IPortfolioProps> = ({
     name,
-    githubUrl,
+    githuburl,
 }: IPortfolioProps) => {
 
     return (
@@ -19,7 +20,7 @@ export const Portfolio: FC<IPortfolioProps> = ({
                     <h1 className="portfolio__title">Portfólio de {name}</h1>
                 </div>
                 <div>
-                    <a className="portfolio__link" href={githubUrl} target="_blank">Github</a>
+                    <a className="portfolio__link" href={githuburl} target="_blank">Github</a>
                 </div>
             </div>
         </div>

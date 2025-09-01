@@ -20,5 +20,5 @@ export function Widget({ src, tag, name = "", githubUrl = "" }: WidgetProps) {
     }
   }, [src]);
 
-  return <div dangerouslySetInnerHTML={{ __html: `<${tag} name="${name}" githubUrl="${githubUrl}"></${tag}>` }} />;
+  return <div dangerouslySetInnerHTML={{ __html: `<${tag} name="${name}" githuburl="${githubUrl}"></${tag}>` }} />;
 }
