@@ -29,4 +29,6 @@ class PortfolioWebComponent extends HTMLElement {
     }
 }
 
-export default PortfolioWebComponent;
+export default PortfolioWebComponent; // Necessário exportar apenas se for necessário realizar a definição dos elementos em outro lugar
+
+customElements.define("portfolio-widget", PortfolioWebComponent);

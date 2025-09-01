@@ -10,11 +10,23 @@ export default defineConfig({
   plugins: [react()],
 
   build: {
-    lib: {
-      entry: "./src/index.tsx",
-      name: "widget",
-      fileName: (format) => `widget.${format}.js`,
-    },
-    target: "esnext"
+    // Caso for um único Web Component
+    // lib: {
+    //   entry: "./src/index.tsx",
+    //   name: "widgets",
+    //   fileName: (format) => `widget.${format}.js`,
+    // },
+    target: "esnext",
+    rollupOptions: {
+      // Caso for vários WebComponents
+      input: {
+        'portfolio-widget': './src/components/portfolio/wcConfig.tsx',
+        'post-widget': './src/components/post/wcConfig.tsx'
+      },
+      output: {
+        entryFileNames: `[name].js`,
+        format: "es"
+      },
+    }
   }
 })
