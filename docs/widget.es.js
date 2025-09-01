@@ -10227,7 +10227,7 @@ function Bd() {
 var Gd = Bd();
 const Xd = /* @__PURE__ */ Md(Gd);
 ti();
-const xd = ".portfolio{text-align:center;display:flex;flex-direction:column;justify-content:space-evenly;max-width:400px;height:150px;border-radius:6px;background-color:#000017;box-shadow:0 10px 15px -3px #0000001a;font-family:Roboto,sans-serif}.portfolio__title{font-size:30px;font-weight:700;margin-bottom:10px;color:#46a2ff}.portfolio__link{font-size:20px;font-weight:700;color:#fff;text-decoration:none;padding:10px;border-radius:3px;background-color:#46a2ff}", Qd = ({
+const xd = ".portfolio{text-align:center;display:flex;flex-direction:column;justify-content:space-evenly;max-width:400px;height:150px;border-radius:6px;background-color:#000017;box-shadow:0 10px 15px -3px #0000001a;font-family:Roboto,sans-serif}.portfolio__title{font-size:30px;font-weight:700;margin-bottom:10px;color:#46a2ff}.portfolio__link{font-size:20px;font-weight:700;color:#fff;text-decoration:none;padding:10px;border-radius:3px;background-color:#46a2ff;cursor:pointer}", Qd = ({
   name: O,
   githubUrl: al
 }) => /* @__PURE__ */ vu.jsxs("div", { children: [
@@ -10237,7 +10237,7 @@ const xd = ".portfolio{text-align:center;display:flex;flex-direction:column;just
       "Portfólio de ",
       O
     ] }) }),
-    /* @__PURE__ */ vu.jsx("div", { children: /* @__PURE__ */ vu.jsx("a", { className: "portfolio__link", href: al, children: "Github" }) })
+    /* @__PURE__ */ vu.jsx("div", { children: /* @__PURE__ */ vu.jsx("a", { className: "portfolio__link", href: al, target: "_blank", children: "Github" }) })
   ] })
 ] }), Zd = (O) => O.replace(/-([a-z])/g, (al, V) => V.toUpperCase());
 class jd extends HTMLElement {

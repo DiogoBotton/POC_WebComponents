@@ -2,12 +2,14 @@
 
 import { useEffect } from "react";
 
-type WidgetProps = {
+interface WidgetProps {
   src: string;
   tag: string;
+  name?: string;
+  githubUrl?: string;
 };
 
-export function Widget({ src, tag }: WidgetProps) {
+export function Widget({ src, tag, name = "", githubUrl = "" }: WidgetProps) {
   useEffect(() => {
     if (!document.querySelector(`script[src="${src}"]`)) {
       const script = document.createElement("script");
@@ -18,5 +20,5 @@ export function Widget({ src, tag }: WidgetProps) {
     }
   }, [src]);
 
-  return <div dangerouslySetInnerHTML={{ __html: `<${tag}></${tag}>` }} />;
+  return <div dangerouslySetInnerHTML={{ __html: `<${tag} name="${name}" githubUrl="${githubUrl}"></${tag}>` }} />;
 }
