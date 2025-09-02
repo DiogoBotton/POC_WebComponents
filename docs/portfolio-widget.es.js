@@ -10258,3 +10258,7 @@ class jd extends HTMLElement {
   }
 }
 customElements.define("portfolio-widget", jd);
+export {
+  jd as default,
+  Zd as normalizeAttribute
+};
