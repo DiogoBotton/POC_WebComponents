@@ -8,16 +8,13 @@ export default function Home() {
       src: "https://diogobotton.github.io/POC_WebComponents/hello-world.js", tag: "hello-world" // Github Pages
     },
     {
-      src: "https://diogobotton.github.io/POC_WebComponents/widget.es.js", tag: "portfolio-widget", name: "Diogo Botton", githubUrl: "https://github.com/DiogoBotton" // Github Pages
+      src: "https://diogobotton.github.io/POC_WebComponents/portfolio-widget.es.js", tag: "portfolio-widget", name: "Diogo Botton", githubUrl: "https://github.com/DiogoBotton" // Github Pages
     },
     {
-      src: "https://raw.githubusercontent.com/DiogoBotton/POC_WebComponents/refs/heads/main/docs/widget.es.js", tag: "portfolio-widget", name: "Vanessa Byork", githubUrl: "https://github.com/Byorks" // Raw: Também é possível adquirir o raw do arquivo Js buildado
+      src: "https://raw.githubusercontent.com/DiogoBotton/POC_WebComponents/refs/heads/main/docs/portfolio-widget.es.js", tag: "portfolio-widget", name: "Vanessa Byork", githubUrl: "https://github.com/Byorks" // Raw: Também é possível adquirir o raw do arquivo Js buildado
     },
     {
-      src: "https://diogobotton.github.io/POC_WebComponents/portfolio-widget.js", tag: "portfolio-widget", name: "Diogo Botton 2", githubUrl: "https://github.com/DiogoBotton"
-    },
-    {
-      src: "https://diogobotton.github.io/POC_WebComponents/post-widget.js", tag: "post-widget"
+      src: "https://diogobotton.github.io/POC_WebComponents/post-widget.es.js", tag: "post-widget"
     }
   ]
 
